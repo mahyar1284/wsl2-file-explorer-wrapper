@@ -3,7 +3,7 @@
 
 int main (int argc, char* argv[]) 
 {
-    std::string cmd(argv[1]); 
+    std::string cmd(argv[argc - 1]); 
     for(int n = 0; n < cmd.length(); n++)
         if(cmd.at(n) == '/')
             cmd.replace(n, 1, "\\\\");
